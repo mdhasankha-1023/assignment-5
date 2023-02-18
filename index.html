@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry genius</title>
+    <!-- link tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- header section start -->
+    <header>
+        <section>
+            <div class="bg-cyan-100	w-11/12 mx-auto mt-8 flex justify-between items-center rounded">
+                <div class="px-12 py-2">
+                    <h3 class="text-4xl font-bold text-amber-800">Interactive<br><span class="text-3xl font-medium text-amber-700">Geometry Genius</span> </h3>
+                </div>
+                <div class="px-12 py-2 text-white">
+                    <button onclick="window.location='blog.html'" class="text-xl py-2 px-9 bg-blue-500 rounded hover:bg-blue-700">Blog</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <main>
+        <section class="w-11/12 mx-auto mt-8">
+
+            <div class="flex gap-4">
+            <div class="w-9/12">
+                <div class="grid grid-cols-3  mt-8 gap-4 p-4">
+
+                <!-- Triangle section -->
+                <div id="triangle" class="text-center border-2 border-slate-300	rounded-lg" >
+                    <img class="mb-10 mx-auto p-2" src="images/triangle.png" alt="">
+                    <div>
+                        <h4 id="tri-title" class="text-2xl text-amber-700 mb-3" id="tri-title">Triangle</h4>
+                    <h5 class="mb-3">Area (A) = 0.5 * <span id="tri-base">b</span>*<span id="tri-hight">h</span></h5>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="tri-inp-1" placeholder="b"><span class="text-xl text-black">cm</span>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="tri-inp-2" placeholder="h"><span class="text-xl text-black">cm</span><br>
+                    </div>
+                    <button id="btn-tri" class="m-12 bg-blue-500 hover:bg-blue-700 cursor-pointer py-4 px-14 text-white text-2xl rounded-lg disabled" type="button">Calculation</button>
+                    
+
+                </div>
+
+                <!-- Rectangle section -->
+                <div id="rectangle" class="text-center border-2 border-slate-300	rounded-lg" >
+                    <img class="mb-10 mx-auto p-2" src="images/rectangle.png" alt="">
+                    <div>
+                    <h4 id="rec-title" class="text-2xl text-amber-700 mb-3">Rectangle</h4>
+                    <h5 class="mb-3">Area (A) = <span id="rec-width">W</span> * <span id="rec-length">l</span></h5>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="rec-inp-1" placeholder="W"><span>cm</span>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="rec-inp-2" placeholder="i"><span>cm</span><br>
+                    </div>
+                    <button id="rec-btn" class="m-12 bg-blue-500 hover:bg-blue-700 cursor-pointer py-4 px-14 text-white text-2xl rounded-lg">Calculation</button>
+
+                </div>
+
+                <!-- Parallelogram section-->
+                <div id="parallelogram" class="text-center border-2 border-slate-300	rounded-lg" >
+                    <img class="mb-10 mx-auto p-2" src="images/parallelogram.png" alt="">
+                    <h4 id="paral-title" class="text-2xl text-amber-700 mb-3">Parallelogram</h4>
+                    <h5 class="mb-3">Area (A) = <span id="paral-base">b</span> * <span id="paral-height">h</span></h5>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="paral-inp-1" placeholder="b"><span>cm</span>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="paral-inp-2" placeholder="h"><span>cm</span><br>
+                    <button id="paral-btn" class="m-12 bg-blue-500 hover:bg-blue-700 cursor-pointer py-4 px-14 text-white text-2xl rounded-lg">Calculation</button>
+
+                </div>
+                
+                </div>
+
+                <div class="grid grid-cols-3  mt-8 gap-4 p-4">
+
+            <!-- Rhombus section -->
+            <div id="rhombus" class="text-center border-2 border-slate-300	rounded-lg" >
+                    <img class="mb-10 mx-auto p-2" src="images/rhombus.png" alt="">
+                    <div>
+                        <h4 id="rhom-title" class="text-2xl text-amber-700 mb-3">Rhombus</h4>
+                    <h5 class="mb-3">Area (A) = 0.5 * <span id="rhom-diagonal-1">d<sub>1</sub></span> * <span id="rhom-diagonal-2">d<sub>2</sub></span></h5>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="rhom-inp-1" placeholder="b"><span>cm</span>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="rhom-inp-2" placeholder="h"><span>cm</span><br>
+                    </div>
+                    <button id="rhom-btn" class="m-12 bg-blue-500 hover:bg-blue-700 cursor-pointer py-4 px-14 text-white text-2xl rounded-lg">Calculation</button>
+                    
+
+                </div>
+
+                <!-- Pentagon section -->
+                <div id="pentagon" class="text-center border-2 border-slate-300	rounded-lg" >
+                    <img class="mb-10 mx-auto p-2" src="images/pentagon.png" alt="">
+                    <div>
+                        <h4 id="pan-title" class="text-2xl text-amber-700 mb-3">Pentagon</h4>
+                    <h5 class="mb-3">Area (A) = <span id="pan-width">p</span> * <span id="pan-height">b</span></h5>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="pan-inp-1" placeholder="W"><span>cm</span>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="pan-inp-2" placeholder="i"><span>cm</span><br>
+                    </div>
+                    <button id="pan-btn" class="m-12 bg-blue-500 hover:bg-blue-700 cursor-pointer py-4 px-14 text-white text-2xl rounded-lg">Calculation</button>
+
+                </div>
+
+                <!-- Ellipse section-->
+                <div id="ellipse" class="text-center border-2 border-slate-300	rounded-lg" >
+                    <img class="mb-10 mx-auto p-2" src="images/ellipse.png" alt="">
+                    <h4 id="ellip-title" class="text-2xl text-amber-700 mb-3">Ellipse</h4>
+                    <h5 class="mb-3">Area (A) = &pi;<span id="ellip-a">a</span><span id="ellip-b">b</span> </h5>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="ellip-inp-1" placeholder="b"><span>cm</span>
+                    <input class="text-xl text-black w-24 mx-2 px-2 py-2 rounded-lg bg-gray-200" type="text" name="" id="ellip-inp-2" placeholder="h"><span>cm</span><br>
+                    <button id="ellip-btn" class="m-12 bg-blue-500 hover:bg-blue-700 cursor-pointer py-4 px-14 text-white text-2xl rounded-lg ">Calculation</button>
+
+                </div>
+                
+                </div>
+                
+            </div>    
+
+            <!-- sidebar -->
+            <div class="mt-8 w-3/12">
+                <div id="area-calculation" class="border-2 border-slate-300	rounded-lg h-3/6 p-4 mt-4 text-center">
+                    <h2 class="text-2xl text-center underline decoration-solid">Area Calculation</h2>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end -->
+
+
+    <!-- link js file -->
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

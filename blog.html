@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- link tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-500	">
+    <header>
+        <h1 class="text-center text-4xl mt-8 p-4 bg-neutral-700	 mx-8 text-cyan-400 rounded">My Blog</h1>
+    </header>
+    <main>
+        <div class="mt-12">
+            <div class="bg-slate-800 mx-8 p-4 text-white">
+                <div>
+                    <h2 class="text-3xl text-cyan-400	 font-medium">1. What is DOM and what is the purpose of DOM ?</h2>
+                    <p class="text-justify text-slate-300 text-xl mt-8">
+                        DOM is a programming interface for Html documents. It's full form is Document Object Model
+                        (DOM).
+                        Document refers to HTML file, Object refers to all Html elements and tags. Modal refers to a
+                        specific structure known as a dom tree. JavaScript can easily manipulate and access Html
+                        elements
+                        with use Dom. When the html document is loaded in a browser, the html document is converted to a
+                        DOM
+                        tree. All Html element or object is expressed as a node in Dom tree. That is, all html object in
+                        the
+                        Dom tree is called a node.
+                    </p>
+                </div>
+
+                <div class="mt-8">
+                    <h2 class="text-3xl text-cyan-400 font-medium">2. How will you select HTML elements using DOM ? Name
+                        the
+                        DOM methods ?</h2>
+                    <p class="text-justify text-xl text-slate-300 mt-8">DOM can be used to select HTML elements in five
+                        ways. Using tag name class name, id name and using query selector method.
+                        The DOM methods are:
+                        1. getElementByTagName() method.
+                        2. getElementsByClassName() method.
+                        3. getElementById() method.
+                        4. querySelector() method.
+                        5. querySelectorAll() method.
+                    </p>
+
+                </div>
+                <div class="mt-8">
+                    <h2 class="text-3xl text-cyan-400 font-medium">3.What is event bubble?</h2>
+                    <p class="text-justify text-xl text-slate-300 mt-8">Event bubbling refers to the propagation of an
+                        event
+                        from a child element to its parent and eventually to the root element of the document. When an
+                        event
+                        is triggered on a nested element, it will also be triggered on all of its parent elements. This
+                        means that event handlers on a parent element can handle events that originated on a child
+                        element.
+                        <br>
+                        <span class="text-cyan-200	"> {For example, if you have a button inside a div, and both the
+                            button
+                            and div have click event handlers, clicking the button will trigger the click event for the
+                            button and then bubble up to the div, triggering its click event as well. Another example is
+                            when a user clicks a link inside a paragraph, the click event will bubble up to the
+                            paragraph
+                            and then to the body and document elements}</span>.
+                    </p>
+                </div>
+                <div class="mt-8">
+                    <h2 class="text-3xl text-cyan-400 font-medium">4. What is a callback function and why will you use
+                        it?
+                    </h2>
+                    <p class="text-justify text-xl text-slate-300 mt-8">A callback function is a function that is passed
+                        as
+                        an argument to another function and is called by that function. It is a way of achieving
+                        asynchronous programming, where the program can continue to execute while the callback function
+                        is
+                        performing its task. Callback functions are used to handle events, handle errors, or to pass
+                        data
+                        between functions. They are commonly used in event-driven programming, where the program needs
+                        to
+                        respond to user input or other events. They are also used in web development, where they are
+                        used to
+                        handle requests and responses to the server. Callback functions are a powerful tool for creating
+                        flexible and efficient programs.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <footer class=" text-center my-6 mx-8 rounded bg-neutral-700 text-sky-400">
+        <h3 class="text-md p-4">Copyright &copy; hassan blog info DOM  </h3>
+    </footer>
+</body>
+
+</html>
